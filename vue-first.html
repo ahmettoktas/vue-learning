@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue js learning</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <button v-on:click="increase()"> Increase </button>
+    <p>{{ number }}</p>
+</div>
+
+<script>
+        new Vue({
+            el:"#app",
+            data:{
+                number: 0
+            },
+            methods: {
+                increase() {
+                    this.number++
+                }
+            }
+        });
+    </script>
+</body>
+</html>
